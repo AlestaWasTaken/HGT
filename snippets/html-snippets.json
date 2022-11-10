@@ -1,0 +1,115 @@
+{
+  "form-input": {
+    "prefix": "hg-form-input",
+    "body": [
+		  "<div class=\"tableMenu\">",
+		  "        <table>",
+		  "            <tr>",
+		  "                <th colspan=\"2\">header</td>",
+		  "            </tr>",
+		  "            <tr>",
+		  "                <th colspan=\"2\">nav</td>",
+		  "            </tr>",
+		  "            <tr>",
+		  "                <td>section</td>",
+		  "                <td rowspan=\"2\">aside</td>",
+		  "            </tr>",
+		  "            <tr>",
+		  "                <td>article</td>",
+		  "            </tr>",
+		  "            <tr>",
+		  "                <th colspan=\"2\">footer</th>",
+		  "            </tr>",
+		  "        </table>"
+		],
+    "description": "a-form-item + a-input"
+  },
+  "form-textarea": {
+    "prefix": "hg-form-textarea",
+    "body": [
+      "<a-form-model-item label=\"多行文本表单\" prop=\"message\">",
+      "\t<a-textarea v-model=\"values.message\" placeholder=\"请输入\" rows=\"4\" />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-textarea"
+  },
+  "form-input-number": {
+    "prefix": "hg-form-input-number",
+    "body": [
+      "<a-form-model-item label=\"数字表单\" ref=\"money\" prop=\"money\">",
+      "\t<a-input-number v-model=\"values.money\" placeholder=\"请输入\" class=\"W100\" />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-input-number"
+  },
+  "form-select": {
+    "prefix": "hg-form-select",
+    "body": [
+      "<a-form-model-item label=\"下拉表单（传Function）\" prop=\"selectFun\">",
+      "\t<hg-select v-model=\"values.select\" placeholder=\"请选择\" :load-data=\"queryRoles\" :fieldKey=\"roleKey\" />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-select"
+  },
+  "form-switch": {
+    "prefix": "hg-form-switch",
+    "body": [
+      "<a-form-model-item label=\"开关表单\" prop=\"switch\">",
+      "\t<a-switch v-model=\"values.switch\" default-checked />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-switch"
+  },
+  "form-radio": {
+    "prefix": "hg-form-radio",
+    "body": [
+      "<a-form-model-item label=\"单选表单\" prop=\"radio\">",
+      "\t<a-radio-group v-model=\"values.radio\">",
+      "\t\t<a-radio value=\"y\">是</a-radio>",
+      "\t\t<a-radio value=\"n\">否</a-radio>",
+      "\t</a-radio-group>",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-radio"
+  },
+  "form-checkbox": {
+    "prefix": "hg-form-checkbox",
+    "body": [
+      "<a-form-model-item label=\"多选表单\" prop=\"checked\">",
+      "\t<a-checkbox-group v-model=\"values.checked\">",
+      "\t\t<a-checkbox value=\"A\">A</a-checkbox>",
+      "\t\t<a-checkbox value=\"B\">B</a-checkbox>",
+      "\t\t<a-checkbox value=\"C\">C</a-checkbox>",
+      "\t</a-checkbox-group>",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-checkbox"
+  },
+  "form-upload": {
+    "prefix": "hg-form-upload",
+    "body": [
+      "<a-form-model-item label=\"上传表单\" prop=\"file\">",
+      "\t<hg-upload v-model=\"values.file\" style=\"min-width: 300px\" />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + ex-upload-file"
+  },
+  "form-date-picker": {
+    "prefix": "hg-form-date-picker",
+    "body": [
+      "<a-form-model-item label=\"时间表单\" prop=\"time\">",
+      "\t<a-date-picker v-model=\"values.time\" show-time type=\"date\" placeholder=\"请选择日期\" class=\"W100\" format=\"YYYY-MM-DD\" value-format=\"YYYY-MM-DD\" />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-date-picker"
+  },
+  "form-range-picker": {
+    "prefix": "hg-form-range-picker",
+    "body": [
+      "<a-form-model-item label=\"日期表单\" prop=\"date\">",
+      "\t<a-range-picker v-model=\"values.date\" class=\"W100\" format=\"YYYY-MM-DD\" value-format=\"YYYY-MM-DD\" />",
+      "</a-form-model-item>"
+    ],
+    "description": "a-form-item + a-range-picker"
+  }
+}

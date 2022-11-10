@@ -1,0 +1,44 @@
+{
+	"name": "hg-vscode-snippets",
+	"displayName": "hg-vscode-snippets",
+	"description": "基于 @hg/template-admin 的模板库，仅限内部使用。",
+	"version": "0.5.5",
+	"publisher": "bszhct",
+	"engines": {
+		"vscode": "^1.42.1"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"scripts": {
+		"build": "vsce package",
+		"publish": "vsce publish"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "vue",
+				"path": "./snippets/vue-snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html-snippets.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/html-snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "17245ec8-80ea-4b1b-b9cf-2a03a5676da2",
+		"publisherId": "97f933cd-1702-4b28-b146-be7c8ea4c74d",
+		"publisherDisplayName": "骆驼",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1668032636409,
+		"preRelease": false
+	}
+}
